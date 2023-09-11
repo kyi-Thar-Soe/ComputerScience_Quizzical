@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Borel&family=Geologica&family=Roboto:wght@400;500;700;900&family=Rubik:wght@400;700&display=swap');
+body{
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  font-family: 'Rubik', sans-serif;
+}
+.main--container{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #eeecec;
+}
+.content--container{
+  max-width: 960px;
+  z-index: 10;
+  padding: 0px 16px;
+}
+.start--content--container{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.end--div{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: .2rem;
+}
+.question--container{
+  margin-bottom: 10px;
+  text-align: left;
+ 
+}
+.blob--svg{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 40vmax;
+  transform-origin: 50% 50%;
+  animation: move 10s ease-in-out infinite;
+}
+@keyframes move{
+    0%   { transform: scale(1)   translate(-60px, -50px); }
+    38%  { transform: scale(0.8) translate(30vw, 30vh) rotate(160deg); }
+    40%  { transform: scale(0.8) translate(30vw, 30vh) rotate(160deg); }
+    78%  { transform: scale(1.5) translate(-20vw, 50vh) rotate(-20deg); }
+    80%  { transform: scale(1.5) translate(-20vw, 50vh) rotate(-20deg); }
+    100% { transform: scale(1)   translate(-60px, -50px); }
+}
+.menu{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.questions{
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.answer{
+  background-color: transparent;
+  border: none;
+  border: 1px solid #293264;
+  padding: 0px 10px;
+  border-radius: 5px;
+  margin-right: 15px;
+  font-size: 15px;
+}
+.line{
+  margin-top: 10px;
+  width: 100%;
+  border-top: 0.794239px solid #c4c8e0;
+}
+.selected{
+  background-color: #b4bce8;
+}
+#correct.answer{
+  background-color: #94D742;
+  border:1px solid #94D742;
+}
+#incorrect.answer{
+  background-color: #f5a4a4;
+  border:1px solid #f5a4a4;
+}
+#not_selected.answer{
+  background-color: rgba(92, 96, 118, 0.4);
+  border:1px solid rgba(92, 96, 118, 0.4);
+}
+.check--button{
+  background-color: #293264;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  margin-left: auto;
+}
+@media only screen and (max-width: 768px) {
+  .questions{
+    font-size: 15px;
+  }
+  .answer{
+    font-size: 12px;
+  }
+  .check--button{
+    padding: 5px 10px;
+  }
+}

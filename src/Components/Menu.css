@@ -1,0 +1,16 @@
+.page--title{
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #293264;
+  }
+.page--description{
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.page--button{
+  background-color: #293264;
+  color: white;
+  padding: 14px 20px;
+  border: none;
+  border-radius: 10px;
+}
