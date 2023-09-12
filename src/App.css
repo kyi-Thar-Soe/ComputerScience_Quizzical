@@ -30,6 +30,7 @@ body{
   justify-content: center;
   gap: 1rem;
   margin-top: .2rem;
+  margin-left: auto;
 }
 .question--container{
   margin-bottom: 10px;
@@ -91,13 +92,16 @@ body{
   background-color: rgba(92, 96, 118, 0.4);
   border:1px solid rgba(92, 96, 118, 0.4);
 }
+.score{
+  color: #293264;
+}
 .check--button{
   background-color: #293264;
   color: white;
   padding: 10px 20px;
   border: none;
   border-radius: 10px;
-  margin-left: auto;
+  
 }
 @media only screen and (max-width: 768px) {
   .questions{

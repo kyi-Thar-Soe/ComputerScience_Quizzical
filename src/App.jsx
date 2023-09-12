@@ -97,6 +97,7 @@ function App() {
       <div className='start--content--container'>
         {questionElements}
         <div className='end--div'>
+          {checked && <span className='score'>You scored <span className='fw-bold'>{correct}/5</span> correct answers.</span>}
           <button onClick={checked ? handlePlayAgain : handleCheck}
           className='check--button'>{checked ? 'Play Again' : 'Check Answer'}</button>
         </div>
